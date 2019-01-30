@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="utf 8">
+
+    <title>Angular 1 App with Stencil Component</title>  
+    <style>
+    body {
+  font-family: sans-serif
+}
+.side-nav ul{
+  list-style: none;
+}
+.side-nav li {
+  margin: 1rem 0;
+}
+.side-nav a {
+  text-decoration: none;
+  color: black;
+}
+    </style>  
+    <script src="angular.js"></script>
+    <script src="hello.js" ></script> 
+    <script src="src/stencil-comp/sidedrawercomponent.js"></script>
+</head>  
+<body ng-app="app" ng-controller="HelloWorldCtrl">
+<h1 >{{message}}</h1>
+
+<button id="side-btn" style="z-index: 1000; background:black;color:white" ng-click="CheckDrawer()">Open</button>
+  <uc-side-drawer title="Main Menu">
+    <nav class="side-nav">
+      <ul>
+        <li><a href="/">A Link</a></li>
+        <li><a href="/">Another Link</a></li>
+        <li><a href="/">A Third Link</a></li>
+      </ul>
+    </nav>
+  </uc-side-drawer>
+
+</body>  
+</html>

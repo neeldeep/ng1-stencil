@@ -1,0 +1,2 @@
+// sidedrawercomponent: Host Data, ES Module/es5 Target
+export var COMPONENTS = [["my-component","fjhn4bc2",1,[["first",1,0,1,2],["last",1,0,1,2],["middle",1,0,1,2]],1],["uc-side-drawer","td3tah3b",1,[["InitCompVariables",32],["extLink",2,1,"ext-link",2],["open",1,1,1,4],["title",1,0,1,2]],1]]

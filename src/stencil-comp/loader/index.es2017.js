@@ -1,0 +1,1 @@
+export * from '../esm/es2017/sidedrawercomponent.define.js';

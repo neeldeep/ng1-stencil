@@ -1,0 +1,81 @@
+{
+  "components": [
+    {
+      "tag": "my-component",
+      "dependencies": [],
+      "componentClass": "MyComponent",
+      "componentPath": "components/my-component/my-component.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/my-component/my-component.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "first",
+          "type": "String",
+          "attr": "first"
+        },
+        {
+          "name": "last",
+          "type": "String",
+          "attr": "last"
+        },
+        {
+          "name": "middle",
+          "type": "String",
+          "attr": "middle"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "uc-side-drawer",
+      "dependencies": [],
+      "componentClass": "SideDrawer",
+      "componentPath": "components/side-drawer-component/side-drawer.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/side-drawer-component/side-drawer.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "extLink",
+          "type": "String",
+          "mutable": true,
+          "reflectToAttr": true,
+          "attr": "ext-link"
+        },
+        {
+          "name": "open",
+          "type": "Boolean",
+          "reflectToAttr": true,
+          "attr": "open"
+        },
+        {
+          "name": "title",
+          "type": "String",
+          "attr": "title"
+        }
+      ],
+      "methods": [
+        {
+          "name": "InitCompVariables"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.16.2",
+    "typescriptVersion": "3.2.2"
+  },
+  "bundles": []
+}
